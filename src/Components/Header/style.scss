@@ -1,0 +1,53 @@
+.header {
+    padding: 10px;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 72rem;
+    width: 100%;
+    box-shadow: rgba(200, 200, 204, 0.4) 0px 7px 29px 0px;
+    position: fixed;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    transition: transform 0.2s ease;
+}
+
+.visible {
+    transform: translateY(0); // Ajustez la valeur selon vos besoins
+  }
+  
+  .hidden {
+    transform: translateY(-100%); // Ajustez la valeur selon vos besoins
+    }
+
+nav {
+    display: flex;
+    gap: 20px;
+    padding-right: 45px;
+}
+
+nav a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #64FFDA;
+}
+
+.container {
+    width: max-content;
+    max-width: 100px;
+}
+
+svg {
+    width: 45%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    fill: none;
+  }
+  

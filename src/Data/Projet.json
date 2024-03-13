@@ -1,0 +1,94 @@
+[
+    {
+        "id": "1",
+        "title" : "Sophie Bluel",
+        "cover" : "https://i.ibb.co/sR8vxYn/sophie.jpg",
+        "description": "Projet 3 parcours développeur web openclassrooms. Implémenter les fonctionnalités dynamiques pour le site de l'architecte Sophie Bluel a partir d'une API.",
+        "tags": [
+            {
+                "name": "HTML & CSS",
+                "logo": "../images/icon-html.svg"
+            },
+            {
+                "name": "Javascript",
+                "logo": "../images/icon-javascript.svg"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "title" : "Kasa",
+        "cover" : "https://i.ibb.co/Nj8QDxx/Kasa.jpg",
+        "description": "Projet 6 parcours développeur web openclassrooms. Ce projet consiste à créer une interface utilisateur entièrement avec React et SASS.",
+        "tags": [
+            {
+                "name": "React",
+                "logo": "../images/icon-react.svg"
+            },
+            {
+                "name": "SASS",
+                "logo": "../images/icon-sass.svg"
+            },
+            {
+                "name": "Javascript",
+                "logo": "../images/icon-javascript.svg"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "title" : "Mon vieux grimoire",
+        "cover" : "https://i.ibb.co/mGrKSkq/Mon-Vieux-Grimoire.jpg",
+        "description": "Projet n°7 parcours developeur web openclassroom. Créer le backend d'un site répertoriant des livres en utilisant le frontend fourni comme base.",
+        "tags": [
+            {
+                "name": "React",
+                "logo": "../images/icon-react.svg"
+            },
+            {
+                "name": "MongoDB",
+                "logo": "../images/icon-mongodb.svg"
+            },
+            {
+                "name": "NodeJS",
+                "logo": "../images/icon-nodejs.svg"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "title" : "Booki",
+        "cover" : "https://i.ibb.co/Nj8QDxx/Kasa.jpg",
+        "description": "Projet 2 parcours développeur web openclassrooms. Ce projet consiste à créer un site de réservation de logement en ligne avec HTLM et CSS.",
+        "tags": [
+            {
+                "name": "HTML & CSS",
+                "logo": "../images/icon-html.svg"
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "title" : "Nina-Carducci",
+        "cover" : "https://i.ibb.co/Nj8QDxx/Kasa.jpg",
+        "description": "Projet 5 parcours développeur web openclassrooms. J'avais pour mission de débugger et d'optimiser le site pour que le référencement soit optimal.",
+        "tags": [
+            {
+                "name": "HTML & CSS",
+                "logo": "../images/icon-html.svg"
+            },
+            {
+                "name": "Javascript",
+                "logo": "../images/icon-javascript.svg"
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "title" : "Qwenta",
+        "cover" : "https://i.ibb.co/Nj8QDxx/Kasa.jpg",
+        "description": "Projet 4 parcours développeur web openclassrooms. Ce projet consiste à mener, préparer et planifier le projet de développement d’un site.",
+        "tags": [
+        ]
+    }
+]

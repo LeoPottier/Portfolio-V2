@@ -1,0 +1,24 @@
+@import './Utils/Variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Anta', sans-serif;
+    background-color: $primary-color;
+    
+}
+
+.main {
+    max-width: 72rem;
+    width: 100%; /* Largeur réduite du corps */
+    margin: auto; 
+}
+
+a {
+    text-decoration: none;
+}
+
