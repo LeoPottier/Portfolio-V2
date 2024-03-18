@@ -1,9 +1,14 @@
-@import './Utils/Variables.scss';
+@import './Variables.scss';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+#root {
+    overflow: hidden;
+    position: relative;
 }
 
 body {
@@ -12,7 +17,7 @@ body {
     
 }
 
-.main {
+main {
     max-width: 72rem;
     width: 100%; /* Largeur réduite du corps */
     margin: auto; 

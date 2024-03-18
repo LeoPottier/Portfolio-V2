@@ -13,7 +13,15 @@
                 "name": "Javascript",
                 "logo": "../images/icon-javascript.svg"
             }
-        ]
+        ],
+        "presentation": "Le site Sophie Bluel est un projet de développement web dans le cadre du parcours Développeur web proposé par la plateforme OpenClassrooms. Ce projet vise à mettre en pratique les compétences acquises dans le domaine du développement web en concevant et en développant un site web interactif pour une entreprise fictive nommée Sophie Bluel.",
+        "acquired": "Dans ce projet, j'ai dû concevoir les fonctionnalités de la page de présentation, de la page de connexion de l'administrateur du site et de la modale permettant de téléverser de nouveaux médias. Il était essentiel de garantir que le site se mette à jour sans nécessiter de rafraîchissement de la page en manipulant le DOM.",
+        "slides": [
+            "../images/Sophie/AccueilR.webp",
+            "../images/Sophie/ModalPhotoR.webp",
+            "../images/Sophie/ModalAjoutR.webp"
+        ],
+        "url": "https://github.com/LeoPottier/Sophie-Bluel"
     },
     {
         "id": "2",
@@ -33,7 +41,17 @@
                 "name": "Javascript",
                 "logo": "../images/icon-javascript.svg"
             }
-        ]
+        ],
+        "presentation": "Le projet Kasa d'OpenClassrooms est une application de location de logements conçue pour être développée en utilisant la bibliothèque React. Cette application permettra aux utilisateurs de rechercher des logements disponibles, d'afficher les détails des logements, et de réserver ceux qui les intéressent.",
+        "acquired": "Dans le cadre du projet, l'objectif était de construire le front-end en utilisant React et React Router Dom. Les tâches principales incluaient la création de routes, la mise en place d'éléments interactifs comme des boîtes de texte extensibles, l'implémentation d'un carrousel cyclique, et la gestion des erreurs avec une redirection vers une page personnalisée. L'ensemble devait être responsive pour assurer une expérience utilisateur optimale sur tous les appareils.",
+        "slides": [
+            "../images/Kasa/Screen.webp",
+            "../images/Kasa/AccueilR.webp",
+            "../images/Kasa/Apropos.webp",
+            "../images/Kasa/Fiche-Logement.webp",
+            "../images/Kasa/ErreurR.webp"
+        ],
+        "url": "https://github.com/LeoPottier/Kasa"
     },
     {
         "id": "3",
@@ -53,19 +71,34 @@
                 "name": "NodeJS",
                 "logo": "../images/icon-nodejs.svg"
             }
-        ]
+        ],
+        "presentation": "La chaîne de librairies a exprimé le désir de lancer un site de notation de livres, permettant à ses membres d'ajouter de nouveaux livres et de partager leurs évaluations avec le public. Ma mission consiste à développer la partie back-end du site en utilisant Node.js.",
+        "acquired": "Pour ce projet, j'ai suivi le cahier des charges en commençant par établir le serveur et le routeur à l'aide du framework Express, tout en configurant la base de données MongoDB avec la bibliothèque Mongoose. J'ai mis en place plusieurs middlewares pour gérer l'authentification, les requêtes multipart et le traitement des images (code vert). En utilisant les méthodes HTTP, j'ai ensuite développé divers contrôleurs pour manipuler la base de données.",
+        "slides": [
+            "../images/MonVieuxGrimoire/accueil.webp",
+            "../images/MonVieuxGrimoire/Ajoute.webp",
+            "../images/MonVieuxGrimoire/note.webp"
+        ],
+        "url": "https://github.com/LeoPottier/Mon-vieux-grimoire"
     },
     {
         "id": "4",
         "title" : "Booki",
         "cover" : "https://i.ibb.co/Nj8QDxx/Kasa.jpg",
-        "description": "Projet 2 parcours développeur web openclassrooms. Ce projet consiste à créer un site de réservation de logement en ligne avec HTLM et CSS.",
+        "description": "Projet 1 parcours développeur web openclassrooms. Ce projet consiste à créer un site de réservation de logement en ligne avec HTLM et CSS.",
         "tags": [
             {
                 "name": "HTML & CSS",
                 "logo": "../images/icon-html.svg"
             }
-        ]
+        ],
+        "presentation":"Le projet Booki est le premier projet à effectuer pour la formation de developpeur web d'openclassrooms. Ce projet vise à mettre en pratique les compétences acquises dans les technologies web front-end, telles que HTML et CSS, ainsi que d'autres concepts comme la conception adaptative (responsive design) et l'intégration de maquettes.",
+        "acquired":"Dans ce projet, nous devions suivre scrupuleusement les spécifications et les contraintes techniques énoncées dans la note de synthèse fournie, ainsi que dans la maquette du site. Il était essentiel que les cartes d'hébergement soient entièrement cliquables. De plus, le site devait être conçu de manière à être compatible avec différents appareils, en respectant trois points de rupture spécifiques pour assurer sa réactivité. Enfin, tout le code développé devait être conforme aux normes établies par les validateurs W3C pour garantir un site web fonctionnel et accessible.",
+        "slides": [
+            "../images/Booki/BookiMobile.PNG",
+            "../images/Booki/Booki.jpg"
+        ],
+        "url": "https://example.com/projet1"
     },
     {
         "id": "5",
@@ -81,7 +114,15 @@
                 "name": "Javascript",
                 "logo": "../images/icon-javascript.svg"
             }
-        ]
+        ],
+        "presentation": "",
+        "acquired": "Dans ce projet, j'ai entrepris une analyse LightHouse avant et après afin d'identifier les problèmes d'optimisation. J'ai focalisé mes efforts sur plusieurs aspects, notamment l'optimisation des images en ajustant leur taille et leur format, la minification des fichiers JS et CSS, ainsi que l'amélioration du référencement SEO, notamment en mettant en œuvre des rich snippets. En outre, j'ai travaillé sur l'accessibilité en réorganisant le code et en respectant les directives de la WCAG. Enfin, j'ai résolu les bugs présents dans le code JavaScript pour assurer le bon fonctionnement de l'application.",
+        "slides": [
+            "../images/Nina/SiteR.webp",
+            "../images/Nina/AuditAvant.webp",
+            "../images/Nina/AuditApres.webp"
+        ],
+        "url": "https://github.com/LeoPottier/nina-carduchi-2"
     },
     {
         "id": "6",
@@ -89,6 +130,16 @@
         "cover" : "https://i.ibb.co/Nj8QDxx/Kasa.jpg",
         "description": "Projet 4 parcours développeur web openclassrooms. Ce projet consiste à mener, préparer et planifier le projet de développement d’un site.",
         "tags": [
+            {
+                "name": "Trello",
+                "logo": "../images/icon-trello.svg"
+            }
+        ],
+        "presentation": "Je suis chargé de mener le projet Menu Maker pour Qwenta chez Webgencia. En collaboration avec Soufiane, le Product Owner, nous préparons une réunion de validation dans deux semaines. Mon rôle consiste à mettre en place une méthodologie agile, définir les spécifications techniques du site et planifier le projet. Je prépare une présentation comprenant un système de veille, les spécifications techniques de Menu Maker et une planification détaillée du projet. Cette présentation sera finalisée pour la réunion avec John, chef de projet chez Qwenta.",
+        "acquired": "Pour ce projet Agile, nous avons débuté en mettant en place un système de veille avec Wakelet, conçu pour être réutilisé par toute l'équipe. Ensuite, j'ai procédé à l'élaboration des spécifications techniques du projet, en fournissant des justifications claires pour mes choix. Enfin, j'ai réalisé la planification du projet en utilisant le logiciel Trello, en mettant en œuvre des tableaux Kanban et la méthode de priorisation MoSCoW, puis j'ai présenté l'ensemble de ces éléments au client.",
+        "slides": [
+            "../images/Qwenta/QwentaR.webp",
+            "../images/Qwenta/TrelloR.webp"
         ]
     }
 ]

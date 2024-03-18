@@ -5,7 +5,7 @@ import './style.scss'
 
 function WaveEffect() {
     return (
-        <div className="effect">
+        <div className="wave-effect">
             <div className="line line-1">
                 <div className="wave wave1" style={{backgroundImage: `url(${wave1})`}}></div>
             </div>

@@ -1,0 +1,54 @@
+@import '../../Utils/Variables.scss';
+
+.carrousel {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+        &-slider{
+            opacity: 0;
+        }
+        &-slider.active{
+            opacity: 1;
+            transform: translateX(0%);
+            height: 420px;
+            padding: 1rem;
+            border: solid 1px white;
+            border-radius: 20px;
+            background-color: rgba(17, 34, 64, 0.5);
+            box-shadow: $shadow;
+            display: flex;
+            justify-content: center;
+        }
+        &-cover {
+            object-fit: contain;
+            border-radius: 25px;
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+        }
+        &-number {
+            color: $font-color;
+            position: absolute;
+            left: 47.5%;
+            bottom: -8.5%;
+    }    
+}
+
+.carroussel-arrow {
+    display: flex;
+    padding: 13px;
+    color: white;
+    width: 100%;
+    
+}
+
+.left-arrow:hover {
+    scale: 2;
+    cursor: pointer;
+}
+
+
+.right-arrow:hover {
+    scale: 2;
+    cursor: pointer;
+}

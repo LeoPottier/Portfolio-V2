@@ -24,7 +24,9 @@ function MouseEffect() {
     }, []);
 
     // useEffect ne doit pas retourner d'éléments JSX
-    return null;
+    return (
+        <div className="effects"></div>
+    );
 }
 
 export default MouseEffect;

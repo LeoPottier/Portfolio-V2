@@ -1,0 +1,20 @@
+@import '../../Utils/Variables.scss';
+
+.hero {
+    width: 100%;
+    height: calc(var(--vh, 1vh)* 100);
+    position: relative;
+    &-content {
+        position: absolute;
+        left: 21%;
+        top: 35%;
+        color: white;
+    }
+    &-name {
+        font-size: 5rem;
+    }
+    &-profession {
+        font-size: 2rem;
+        color: $font-color;
+    }
+}

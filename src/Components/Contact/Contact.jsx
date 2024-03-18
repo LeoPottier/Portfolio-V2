@@ -7,10 +7,10 @@ function Contact() {
         alert(JSON.stringify(d))
 
     return (
-        <section className="contact">
+        <section id="contact" className="contact">
             <h2 className="contact-title">Contact</h2>
             <div className="contact-container">
-                <div className="content">
+                <div className="contact-content">
                     <div className="content-animation"></div>
                 </div>
                     <form className="form" onSubmit={handleSubmit(onSubmit)}>

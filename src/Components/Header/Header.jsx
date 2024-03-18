@@ -43,7 +43,7 @@ function Header() {
 
   return (
     <header className={`header ${isVisible ? 'visible' : 'hidden'}`}>
-      <a href="#" className="container">
+      <a href="/" className="container">
         <svg id="hexagon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
           <g>
             <g id="L" transform="translate(36, 33)" fill="#64FFDA" style={{ opacity: 0 }} fontFamily="'Anta', sans-serif" fontSize="50" fontWeight="400" letterSpacing="4.16666603">
@@ -67,9 +67,9 @@ function Header() {
         </svg>
       </a>
       <nav>
-        <a href="">À propos</a>
-        <a href="">Mes projets</a>
-        <a href="">Contact</a>
+        <a href="#about">À propos</a>
+        <a href="#projet">Mes projets</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
   );
