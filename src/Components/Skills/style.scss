@@ -1,45 +1,116 @@
+@import '../../Utils/Variables.scss';
+
 .skill  {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    padding-bottom: 100px;
-}
-
-.skill h2 {
-    color: white;
-    width: 100%;
-    display: flex;
     justify-content: center;
-    padding-bottom: 40px;
-    margin-bottom: 5rem;
-    border-bottom: solid 1px;
+    padding-bottom: 100px;
+    @media screen and (max-width: $breakpoint-mobile) {
+        padding-bottom: 50px;
+    }
+    &-block {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: $breakpoint-tablet) {
+           padding: 3rem;
+        }
+        @media screen and (max-width: $breakpoint-mobile) {
+            padding: 3rem;
+            flex-direction: column;
+            align-items: center;
+            text-align: start;
+            gap: 2rem;
+         }
+    }
+    &-container {
+        @media screen and (max-width: $breakpoint-mobile) {
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+    &-title {
+        opacity: 0;
+        color: white;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
+        margin-bottom: 5rem;
+        border-bottom: solid 1px;
+        @media screen and (max-width: $breakpoint-mobile) {
+            margin: auto;
+        }
+    }
+    &-list {
+        list-style: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        @media screen and (max-width: $breakpoint-mobile) {
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+    li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        padding: 5px;
+    }
+    li img {
+        width: 1.2rem;
+        object-fit: cover;
+    }
+    &-icon-git {
+        color: white;
+        margin: 1px;
+    }
+    h3 {
+        color: rgb(94 234 212);
+        padding: 10px 30px;
+        @media screen and (max-width: $breakpoint-mobile) {
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
 
-.skill h3 {
-    color: rgb(94 234 212);
-    padding: 10px 30px;
+.slide-from-left {
+    animation: slideFromLeft 1s ease forwards 0.3s;
+    opacity: 0;
+    transform: translateX(-100%);
+    }
+    @keyframes slideFromLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-.skill-list {
-    list-style: none;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-}
 
-li {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    padding: 5px;
+.slide-from-right {
+    animation: slideFromRight 1s ease forwards 0.3s;
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  @keyframes slideFromRight {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
 }
-
-li img {
-    width: 1.2rem;
-    object-fit: cover;
-}
-
-.icon-git {
-    color: white;
+.slide-from-bottom {
+    animation: slideFromBottom 1s ease forwards 0.3s;
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  @keyframes slideFromBottom {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
 }

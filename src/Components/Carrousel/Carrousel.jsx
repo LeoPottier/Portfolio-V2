@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import './style.scss';
@@ -8,14 +8,21 @@ import { SvgIcon } from '@mui/material';
 
 function Carrousel({ slides }) {
   
-    // useState est un hook d'état. Il permet aux composants React de déclarer et de gérer leur propre état interne. 
-    const [currentImage, setCurrentImage] = useState(0);
-    const length = slides.length;
+  const [currentImage, setCurrentImage] = useState(0);
+  const length = slides.length;
   
+  useEffect(() => {
+    const interval = setInterval(() => {
+        showNextImage();
+    }, 5000);
 
-    const showPreviousImage = () => setCurrentImage((currentImage - 1 + length) % length);
+    return () => clearInterval(interval); 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [length]);
 
-    const showNextImage = () => setCurrentImage((currentImage + 1) % length);
+  const showPreviousImage = () => setCurrentImage((currentImage - 1 + length) % length);
+
+  const showNextImage = () => setCurrentImage((currentImage + 1) % length);
   
     return (
       <section className='carrousel'>

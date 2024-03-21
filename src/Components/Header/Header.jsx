@@ -1,10 +1,12 @@
 import './style.scss';
-import  anime from 'animejs';
+import anime from 'animejs';
 import { useEffect, useState } from 'react';
+import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 function Header() {
   const [scrollPos, setScrollPos] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const anim = anime.timeline({
@@ -34,10 +36,18 @@ function Header() {
       setScrollPos(currentScrollPos);
     }
 
+    function handleResize() {
+      setIsMobile(window.innerWidth < 768); // Adjust the breakpoint as needed
+    }
+
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+
+    handleResize(); // Check initial window size
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
     };
   }, [scrollPos]);
 
@@ -66,11 +76,17 @@ function Header() {
           </g>
         </svg>
       </a>
-      <nav>
-        <a href="#about">À propos</a>
-        <a href="#projet">Mes projets</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      {isMobile ? (
+        <BurgerMenu />
+      ) : (
+        <nav className='nav-items'>
+          <a href="#about">À propos</a>
+          <a href="#skills">Skills</a>
+          <a href="#projet">Mes projets</a>
+          <a href="#contact">Contact</a>
+          <a href="https://cvdesignr.com/p/5cdbdb8b2bd8d" className='cv-nav'>Mon CV</a>
+        </nav>
+      )}
     </header>
   );
 }

@@ -4,8 +4,12 @@
     width: 50%;
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: $breakpoint-mobile) {
+        width: 100%;
+    }
         &-slider{
             opacity: 0;
+            animation: slideOpacity 0.5s ease-in-out;
         }
         &-slider.active{
             opacity: 1;
@@ -32,6 +36,15 @@
             left: 47.5%;
             bottom: -8.5%;
     }    
+}
+
+@keyframes slideOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
 }
 
 .carroussel-arrow {

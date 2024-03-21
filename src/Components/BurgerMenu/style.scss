@@ -1,0 +1,52 @@
+@import '../../Utils/Variables.scss';
+
+.burger-menu {
+    &-icon {
+        font-size: 2rem;
+        color: $font-color;
+    }
+    &-items {
+        z-index: -1000;
+        position: fixed;
+        top: 75px;
+        right: 0;
+        background-color: rgba(17, 34, 64);
+        width: 100%;
+        height: 92vh;
+        padding: 10px;
+        box-shadow: $shadow;
+        &.open {
+            display: block;
+            animation: slideInFromTop 1s ease forwards;
+        }
+        &.closed {
+            display: block;
+            animation: slideOutToBot 1s ease forwards;
+        }
+        a {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            font-size: 2rem;
+            padding: 3rem;
+        }
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+}
+
+@keyframes slideOutToBot {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-120%);
+    }
+}

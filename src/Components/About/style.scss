@@ -1,16 +1,33 @@
 @import '../../Utils/Variables.scss';
 
-.about {
-    padding-bottom: 100px;
+.about {    
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 9rem;
-    letter-spacing: 0.5px;
+    gap: 10rem;
+    padding-bottom: 7rem;
+    @media screen and (max-width: $breakpoint-tablet) {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 5rem;
+    }
     &-text {
         width: 50%;
         color: white;
         font-size: 1.2rem;
+        &.slide-from-left {
+            animation: slideFromLeft 1s ease forwards 0.3s;
+            opacity: 0;
+            transform: translateX(-100%);
+            }
+            @keyframes slideFromLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @media screen and (max-width: $breakpoint-tablet) {
+            width: 100%;
+        }
     }
     h2 {
         margin: 24px;
@@ -18,9 +35,6 @@
     }
     p {
         margin: 24px;
-    }
-    strong {
-        color: $font-color;
     }
     img {
         object-fit: cover;
@@ -30,15 +44,33 @@
         object-position: 75%;
     }
     &-cover {
-        rotate: 7deg;
         width: 29%;
         height: 30rem;
-        transition: 1s ease;
-        border: solid 1px white;
-        border-radius: 20px;
-        box-shadow: $shadow;
-        &:hover {
-        transform: rotate(-7deg);
+        transition: slideFromRight 1s ease, transform 1s ease;
+        &.slide-from-right {
+          animation: slideFromRight 1s ease forwards  0.3s;
+          opacity: 0;
+          transform: translateX(100%);
+        }
+        @keyframes slideFromRight {
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+        &-photo {
+            rotate: 7deg;
+            transition: transform 1s ease;
+            border: solid 1px white;
+            border-radius: 20px;
+            box-shadow: $shadow;
+            &:hover {
+            transform: rotate(-7deg);
+            }
+        }
+        @media screen and (max-width: $breakpoint-tablet) {
+            width: 100%;
+            padding: 4rem;
         }
     }
 }

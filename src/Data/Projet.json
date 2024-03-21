@@ -98,7 +98,7 @@
             "../images/Booki/BookiMobile.PNG",
             "../images/Booki/Booki.jpg"
         ],
-        "url": "https://example.com/projet1"
+        "url": "https://github.com/LeoPottier/Booki"
     },
     {
         "id": "5",
@@ -115,7 +115,7 @@
                 "logo": "../images/icon-javascript.svg"
             }
         ],
-        "presentation": "",
+        "presentation": "Nina Carducci dispose d'un portfolio contenant de nombreuses images, mais son site présente des problèmes d'optimisation et des bugs. Après avoir effectué un audit, je lui propose d'améliorer l'optimisation des images, de réviser le code et la structure du site, et de corriger les problèmes identifiés.",
         "acquired": "Dans ce projet, j'ai entrepris une analyse LightHouse avant et après afin d'identifier les problèmes d'optimisation. J'ai focalisé mes efforts sur plusieurs aspects, notamment l'optimisation des images en ajustant leur taille et leur format, la minification des fichiers JS et CSS, ainsi que l'amélioration du référencement SEO, notamment en mettant en œuvre des rich snippets. En outre, j'ai travaillé sur l'accessibilité en réorganisant le code et en respectant les directives de la WCAG. Enfin, j'ai résolu les bugs présents dans le code JavaScript pour assurer le bon fonctionnement de l'application.",
         "slides": [
             "../images/Nina/SiteR.webp",

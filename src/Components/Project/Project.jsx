@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import  { useState, useRef, useEffect } from 'react';
 import Data from '../../Data/Projet.json';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import './style.scss';
@@ -17,11 +17,33 @@ function Project() {
         setSelectedProject(null);
     };
 
+    const [isVisible, setIsVisible] = useState(false)
+    const projectRef = useRef(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+        if (projectRef.current) {
+            const { top } = projectRef.current.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            if (top < windowHeight) {
+                setIsVisible(true);
+            }
+        }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+}, []);
+
     return (
-        <section id="projet" className='projet'>
-            <h2 className='projet-title'>Projets</h2>
+        <section id="projet" className='projet' ref={projectRef}>
+            <h2 className={`projet-title ${isVisible ? 'opacity' : ''}`}>Projets</h2>
             {Data.map((project, index) => (
-                <div className='projet-card' key={index}>
+                <div className={`projet-card ${isVisible ? 'slide-from-bottom' : ''}`} key={index}>
                     <a onClick={() => handleProjectClick(project)}>
                         <div className='projet-card-link'>
                             <h3 className='projet-card-title'>{project.title}</h3>

@@ -5,8 +5,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 8rem;
     &-title {
-        width: 100%;
+        opacity: 0;
+        width: 70%;
         display: flex;
         justify-content: center;
         color: white;
@@ -22,18 +24,19 @@
     }
 }
 
-.content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    &-animation {
-        background-color: white;
-        width: 31rem;
-        height: 31rem;
-        border-radius: 50%;
-        box-shadow: 0 0 .5em .2em #000 inset, 0 0 .15em 0 #fff;
-    }
+
+.content-animation {
+    background-color: rgb(48, 45, 45);
+    width: 31rem;
+    height: 31rem;
+    border-radius: 50%;
+    box-shadow: 0 0 .5em .2em #000 inset, 0 0 .15em 0 #fff;
+    overflow: hidden;
+}
+
+
+.icon1 {
+    color: white;
 }
 
 
@@ -41,6 +44,7 @@
     color: white;
     display: flex;
     flex-direction: column;
+    align-items: end;
     gap: 1rem;
     &-group {
         color: white;
@@ -55,6 +59,12 @@
         border: none;
         color: rgb(94 234 212);;
         background-color: #112240;
+        border-radius: 20px;
+        &:hover {
+            border: solid 1px white;
+            box-shadow: $shadow;
+            cursor: pointer;
+        }
     }
 }
 
@@ -89,3 +99,7 @@
     padding: 0.5rem;
 }
 
+.opacity {
+    transition: opacity 0.5s ease-in-out 0.3s;
+    opacity: 1;
+}

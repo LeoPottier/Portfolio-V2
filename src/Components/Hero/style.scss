@@ -9,12 +9,54 @@
         left: 21%;
         top: 35%;
         color: white;
+        animation: nameAppears 3s ease ;
     }
     &-name {
         font-size: 5rem;
+        @media screen and (max-width: $breakpoint-tablet) {
+            font-size: 6vw;
+        }
     }
     &-profession {
         font-size: 2rem;
         color: $font-color;
+        @media screen and (max-width: $breakpoint-tablet) {
+            font-size: 3vw;
+        }
     }
 }
+
+.corners {
+    margin: 1rem;
+    max-width: 90rem;
+    position: absolute;
+    top: 16%;
+    left: 0%;
+    animation: blowUpCorner 2s ease;
+    @media screen and (max-width: $breakpoint-mobile) {
+        top: 26%;
+        left: 0%;
+    }
+}
+
+@keyframes blowUpCorner {
+    0% {
+      transform:scale(0);
+    }
+    100% {
+      transform:scale(1);
+    }
+}
+
+
+@keyframes nameAppears {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
