@@ -8,10 +8,10 @@ import Footer from "./Components/Footer/Footer";
 function Router() {
   return (
       <React.StrictMode>
-          <BrowserRouter>
+          <BrowserRouter basename="/Portfolio">
               <Header />
               <Routes>
-                  <Route path="/" element={<Home />} />   
+                  <Route exact path="/Portfolio" element={<Home />} />   
               </Routes>
               <Footer />
           </BrowserRouter>
