@@ -27,7 +27,7 @@ function Contact() {
     }, []);
 
     return (
-        <section id="contact" className="contact" >
+        <section id="contact" className="contact" ref={contactRef} >
             <h2 className={`contact-title ${isVisible ? 'opacity' : ''}`}>Contact</h2>
             <div className="contact-container">
                 <AnimationContact />
