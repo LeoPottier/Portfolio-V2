@@ -13,18 +13,35 @@
     }
     &-name {
         font-size: 5rem;
-        @media screen and (max-width: $breakpoint-tablet) {
-            font-size: 6vw;
+        @media screen and (max-width: $breakpoint-mobile) {
+            font-size: 11vw;
         }
     }
     &-profession {
         font-size: 2rem;
         color: $font-color;
-        @media screen and (max-width: $breakpoint-tablet) {
-            font-size: 3vw;
+        @media screen and (max-width: $breakpoint-mobile) {
+            font-size: 5vw;
+        }
+    }
+    &-guide {
+        width: 100%;
+        color: white;
+        position: absolute;
+        bottom: 6%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        animation: float 2s ease-in-out infinite;
+        &-arrow {
+            color: $font-color;
         }
     }
 }
+
 
 .corners {
     margin: 1rem;
@@ -58,5 +75,17 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes float {
+    0% {
+      transform: translateY(-5px);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(-5px);
     }
   }

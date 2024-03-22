@@ -17,89 +17,23 @@
         margin-bottom: 5rem;
     }
     &-container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 6rem;
-    }
-}
-
-
-.content-animation {
-    background-color: rgb(48, 45, 45);
-    width: 31rem;
-    height: 31rem;
-    border-radius: 50%;
-    box-shadow: 0 0 .5em .2em #000 inset, 0 0 .15em 0 #fff;
-    overflow: hidden;
-}
-
-
-.icon1 {
-    color: white;
-}
-
-
-.form {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 1rem;
-    &-group {
-        color: white;
         width: 100%;
         display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    &-submit {
-        width: 6rem;
-        height: 50px;
-        border: none;
-        color: rgb(94 234 212);;
-        background-color: #112240;
-        border-radius: 20px;
-        &:hover {
-            border: solid 1px white;
-            box-shadow: $shadow;
-            cursor: pointer;
+        flex-direction: row;
+        gap: 6rem;
+        @media screen and (max-width: $breakpoint-tablet) {
+            gap: 0;
+            width: 80%;
+            justify-content: center;
+        }
+        @media screen and (max-width: $breakpoint-mobile) {
+            width: 100%;
         }
     }
-}
-
-
-.form-name {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    &-input {
-        width: 16rem;
-        border-radius: 5px;
-        border: none;
-        padding: 0.5rem;
-        box-shadow: $shadow;
-    }
-}
-
-.form-subject-input {
-    height: 30px;
-    box-shadow: $shadow;
-    border: none;
-    border-radius: 5px;
-    padding: 0.5rem;
-}
-
-.form-message-input {
-    height: 10rem;
-    box-shadow: $shadow;
-    border: none;
-    border-radius: 5px;
-    padding: 0.5rem;
 }
 
 .opacity {
     transition: opacity 0.5s ease-in-out 0.3s;
     opacity: 1;
 }
+

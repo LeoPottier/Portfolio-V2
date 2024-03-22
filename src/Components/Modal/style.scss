@@ -15,9 +15,9 @@
     gap: 3rem;
     animation: blowUpModal 1s ease;
     @media screen and (max-width: $breakpoint-mobile) {
-        max-height: 100vh;
+        max-height: 97vh;
         overflow-y: auto;
-        margin: 10px;
+        margin: 15px;
     }
     &-project {
         display: flex;

@@ -14,6 +14,9 @@
     gap: 5px;
     box-shadow: $shadow;
     z-index: 1;
+    @media screen and (max-width: $breakpoint-mobile) {
+        display: none;
+    }
     &-box {
         width: 3em;
         display: flex;

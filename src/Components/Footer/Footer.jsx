@@ -7,7 +7,7 @@ function Footer() {
             <div className="footer">
                 <p>Designed & built by Léo Pottier.<br />
                     <strong>Made with React.</strong>
-                    <img src={ReactIcon} className='footer-icon'/>
+                    <img src={ReactIcon} className='footer-icon' alt="react footer icon"/>
                 </p>
             </div>
         </footer>
