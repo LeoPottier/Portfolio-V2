@@ -11,7 +11,7 @@ function Router() {
           <BrowserRouter basename="/Portfolio">
               <Header />
               <Routes>
-                  <Route exact path="/Portfolio" element={<Home />} />   
+                  <Route exact path="/" element={<Home />} />   
               </Routes>
               <Footer />
           </BrowserRouter>
