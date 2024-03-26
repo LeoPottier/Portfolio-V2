@@ -44,7 +44,7 @@ function Project() {
             <h2 className={`projet-title ${isVisible ? 'opacity' : ''}`}>Projets</h2>
             {Data.map((project, index) => (
                 <div className={`projet-card ${isVisible ? 'slide-from-bottom' : ''}`} key={index}>
-                    <a onClick={() => handleProjectClick(project)}>
+                    <a onClick={() => handleProjectClick(project)} rel="nofollow" >
                         <div className='projet-card-link'>
                             <h3 className='projet-card-title'>{project.title}</h3>
                             <SvgIcon component={ArrowOutwardIcon} className='projet-card-icon'/>

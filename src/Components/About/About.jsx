@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState, useEffect, useRef } from 'react';
 import './style.scss';
-import PhotoDeProfil from '../../assets/PhotoDeProfil.jpg';
+import PhotoDeProfil from '../../assets/PhotoDeProfilRr.webp';
 
 function About() {
     const [isVisible, setIsVisible] = useState(false);

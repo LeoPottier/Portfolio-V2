@@ -38,13 +38,13 @@ const BurgerMenu = () => {
         <a href="#contact" onClick={closeMenu}>Contact</a>
         <a href="https://cvdesignr.com/p/5cdbdb8b2bd8d" className='cv-nav' target="_blank" onClick={closeMenu}>Mon CV</a>
         <div className='burger-menu-social'>
-          <a className="social-media-link" href="mailto:leorpottier@gmail.com" rel="noreferrer" target="_blank">
+          <a className="social-media-link" href="mailto:leorpottier@gmail.com" rel="noreferrer" aria-label="link-email" target="_blank">
             <EmailIcon  className="social-media-icon" sx= {{width:'40px', fontSize:'2em'}} />
           </a>
-          <a className="social-media-link" href="https://www.linkedin.com/in/l%C3%A9o-pottier-0436612bb/" rel="noreferrer" target="_blank">
+          <a className="social-media-link" href="https://www.linkedin.com/in/l%C3%A9o-pottier-0436612bb/" aria-label="link-linkedin" rel="noreferrer" target="_blank">
             <LinkedInIcon  className="social-media-icon" sx= {{width:'40px', fontSize:'2em'}} />
           </a>
-          <a className="social-media-link" href="https://github.com/LeoPottier" rel="noreferrer" target="_blank">
+          <a className="social-media-link" href="https://github.com/LeoPottier" rel="noreferrer" aria-label="link-github" target="_blank">
             <GitHubIcon  className="social-media-icon" sx= {{width:'40px', fontSize:'2em'}} />
           </a>
         </div>
