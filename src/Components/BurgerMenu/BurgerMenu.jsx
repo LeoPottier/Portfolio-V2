@@ -32,6 +32,7 @@ const BurgerMenu = () => {
         <SvgIcon component={isOpen ? CloseIcon : MenuIcon} />
       </div>
       <nav className={`burger-menu-items ${isOpen ? 'open' : ''}`}>
+        <div className='burger-menu-link'>
         <a href="#about" onClick={closeMenu}>À propos</a>
         <a href="#skills" onClick={closeMenu}>Skills</a>
         <a href="#projet" onClick={closeMenu}>Mes projets</a>
@@ -47,6 +48,7 @@ const BurgerMenu = () => {
           <a className="social-media-link" href="https://github.com/LeoPottier" rel="noreferrer" aria-label="link-github" target="_blank">
             <GitHubIcon  className="social-media-icon" sx= {{width:'40px', fontSize:'2em'}} />
           </a>
+        </div>
         </div>
       </nav>
     </div>

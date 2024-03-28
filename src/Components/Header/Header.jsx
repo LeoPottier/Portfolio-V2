@@ -84,7 +84,7 @@ function Header() {
           <a href="#skills">Skills</a>
           <a href="#projet">Mes projets</a>
           <a href="#contact">Contact</a>
-          <a href="https://cvdesignr.com/p/5cdbdb8b2bd8d" className='cv-nav'>Mon CV</a>
+          <a href="https://cvdesignr.com/p/5cdbdb8b2bd8d" className='cv-nav' target="_blank">Mon CV</a>
         </nav>
       )}
     </header>
