@@ -1,63 +1,63 @@
-@import '../../Utils/Variables.scss';
+@import "../../Utils/Variables.scss";
 
 .burger-menu {
-    &-icon {
-        color: $font-color;
-        padding-right: 20px;
-        padding-top: 5px;
-        font-size: 2rem;
+  &-icon {
+    color: $font-color;
+    padding-right: 20px;
+    padding-top: 5px;
+    font-size: 2rem;
+  }
+  &-items {
+    position: fixed;
+    top: 75px;
+    right: 0;
+    background-color: rgb(2, 29, 54);
+    width: 100%;
+    padding: 0 10px;
+    box-shadow: $shadow;
+    display: none;
+    height: 92vh;
+    &.open {
+      display: block;
     }
-    &-items {
-        position: fixed;
-        top: 75px;
-        right: 0;
-        background-color: rgb(2, 29, 54);
-        width: 100%;
-        padding: 0 10px;
-        box-shadow: $shadow;
-        display: none;
-        height: 92vh;
-        &.open {
-          display: block;
-        }
-    }
-    &-link {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 3rem;
-      width: 100%;
-      font-size: 2rem;
-    }
-    &-social {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      color:$font-color;
-    }
-    a {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
+  }
+  &-link {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    font-size: 2rem;
+  }
+  &-social {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: $font-color;
+  }
+  a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @keyframes slideInFromTop {
-    from {
-      transform: translateY(-100%);
-    }
-    to {
-      transform: translateY(0);
-    }
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 @keyframes slideOutToBot {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(-120%);
-    }
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-120%);
+  }
 }

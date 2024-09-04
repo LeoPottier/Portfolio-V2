@@ -1,15 +1,15 @@
-@import '../../Utils/Variables.scss';
+@import "../../Utils/Variables.scss";
 
 .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    border-top: solid 1px;
-    box-shadow: $shadow;
-    height: 10rem;
-    &-icon {
-        width: 1rem;
-        padding-top: 10px;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-top: solid 1px;
+  box-shadow: $shadow;
+  height: 10rem;
+  &-icon {
+    width: 1rem;
+    padding-top: 10px;
+  }
 }

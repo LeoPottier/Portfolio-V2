@@ -1,91 +1,296 @@
-@import '../../Utils/Variables.scss';
+@import "../../Utils/Variables.scss";
 
 .projet {
-    width: 100%;
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  &-list {
+    border-radius: 20px;
+    box-shadow: $shadow;
+    overflow-y: auto;
+    background: $primary-color;
+    &::-webkit-scrollbar {
+      width: 12px; /* Largeur de la scrollbar */
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #020114; /* Couleur de fond de la track */
+      border-radius: 6px; /* Arrondi des bords de la track */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #0a1a32; /* Couleur de la barre de défilement */
+      border-radius: 6px; /* Arrondi des bords de la barre */
+      border: 3px solid #63fbd8; /* Crée un espace autour de la barre pour donner l'illusion d'un padding */
+    }
+  }
+  &-title {
+    width: 70%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding-bottom: 7rem;
+    color: white;
+    border-bottom: solid 1px;
+    padding-bottom: 40px;
+    margin-bottom: 5rem;
+    opacity: 0;
+  }
+  &-card {
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    &:hover {
+      border: solid 1px white;
+      box-shadow: $shadow;
+      background-color: $secondary-color;
+      .projet-card-title {
+        color: rgb(94 234 212);
+      }
+      .projet-card-icon {
+        color: rgb(94 234 212);
+        transform: translateX(10px) translateY(-10px);
+        transition: transform 0.5s ease;
+      }
+    }
+    &-link {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      color: white;
+    }
     &-title {
-        width: 70%;
-        display: flex;
-        justify-content: center;
-        color: white;
-        border-bottom: solid 1px;
-        padding-bottom: 40px;
-        margin-bottom: 5rem;
-        opacity: 0;
+      padding-bottom: 10px;
+      width: 93%;
     }
-    &-card {
-        width: 23rem;
-        color: white;
-        padding: 1rem;
-        border-radius: 10px;
-        border: 1px solid transparent;
-        cursor: pointer;
-        &:hover {
-            border: solid 1px white;
-            box-shadow: $shadow;
-            background-color: $secondary-color;
-            .projet-card-title {
-                color: rgb(94 234 212);
-            }
-            .projet-card-icon {
-                color: rgb(94 234 212);
-                transform: translateX(10px) translateY(-10px);
-                transition: transform 0.5s ease;
-            }
-        }
-        &-link {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            color: white;
-        }
-        &-title {
-            padding-bottom: 10px;
-            width: 93%;
-        }
-        &-description {
-            font-size: .875rem;
-            line-height: 1.5;
-            color: rgb(125, 143, 168);
-            opacity: 1;
-            padding: 1rem 0;
-        }
-        &-tags {
-            background-color: rgba(5, 174, 180, 0.2);
-            border-radius: 20px;
-            color: rgb(94 234 212);
-            line-height: 1.5rem;
-            padding: 3px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 5px;
-            max-width: 9rem;
-        }
-        &-icon {
-            width: 1rem;
-            height: 1rem;
-        }
+    &-description {
+      font-size: 0.875rem;
+      line-height: 1.5;
+      color: rgb(125, 143, 168);
+      opacity: 1;
+      padding: 1rem 0;
     }
+    &-tags {
+      background-color: rgba(5, 174, 180, 0.2);
+      border-radius: 20px;
+      color: rgb(94 234 212);
+      line-height: 1.5rem;
+      padding: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      max-width: 9rem;
+    }
+    &-icon {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+  @media screen and (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .tags-container {
-    display: flex;
-    gap: 5px;
-    padding-top: 10px;
+  display: flex;
+  gap: 5px;
+  padding-top: 10px;
 }
 
 .projet-card-tag-logo {
-    width: 13%;
-    object-fit: cover;
+  width: 13%;
+  object-fit: cover;
 }
 
 .opacity {
-    transition: opacity 0.5s ease-in-out 0.5s;
-    opacity: 1;
+  transition: opacity 0.5s ease-in-out 0.5s;
+  opacity: 1;
+}
+
+.details {
+  width: 150%;
+  border-radius: 20px;
+  box-shadow: $shadow;
+  padding: 2rem;
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 12px; /* Largeur de la scrollbar */
   }
+
+  &::-webkit-scrollbar-track {
+    background: #020114; /* Couleur de fond de la track */
+    border-radius: 6px; /* Arrondi des bords de la track */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #020114; /* Couleur de la barre de défilement */
+    border-radius: 6px; /* Arrondi des bords de la barre */
+    border: 3px solid #63fbd8; /* Crée un espace autour de la barre pour donner l'illusion d'un padding */
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Couleur de la barre de défilement au survol */
+  }
+  @media screen and (max-width: $breakpoint-mobile) {
+  }
+  &-project {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    @media screen and (max-width: $breakpoint-mobile) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: $font-color;
+  }
+  &-cover {
+    object-fit: cover;
+    height: 100%;
+  }
+  &-container-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @media screen and (max-width: $breakpoint-mobile) {
+      width: 100%;
+    }
+  }
+  &-description {
+    color: white;
+    font-size: 1.1rem;
+  }
+  &-github {
+    color: white;
+    border: solid 1px;
+    border-radius: 20px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 15rem;
+    &:hover {
+      background-color: rgba(17, 34, 64, 0.5);
+      cursor: pointer;
+    }
+    @media screen and (max-width: $breakpoint-mobile) {
+      width: 100%;
+    }
+  }
+  &-close {
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 94%;
+    @media screen and (max-width: $breakpoint-mobile) {
+      left: 90%;
+    }
+  }
+  @media screen and (max-width: $breakpoint-mobile) {
+    width: 100%;
+    box-shadow: none;
+  }
+}
+
+.projet-mobile {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  overflow: auto;
+  &-title {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-bottom: solid 1px;
+    padding-bottom: 40px;
+    margin-bottom: 5rem;
+    opacity: 0;
+  }
+  &-card {
+    width: 23rem;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    &:hover {
+      border: solid 1px white;
+      box-shadow: $shadow;
+      background-color: $secondary-color;
+      .projet-card-title {
+        color: rgb(94 234 212);
+      }
+      .projet-card-icon {
+        color: rgb(94 234 212);
+        transform: translateX(10px) translateY(-10px);
+        transition: transform 0.5s ease;
+      }
+    }
+    &-link {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      color: white;
+    }
+    &-title {
+      padding-bottom: 10px;
+      width: 93%;
+    }
+    &-description {
+      font-size: 0.875rem;
+      line-height: 1.5;
+      color: rgb(125, 143, 168);
+      opacity: 1;
+      padding: 1rem 0;
+    }
+    &-tags {
+      background-color: rgba(5, 174, 180, 0.2);
+      border-radius: 20px;
+      color: rgb(94 234 212);
+      line-height: 1.5rem;
+      padding: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      max-width: 9rem;
+    }
+    &-icon {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+}
+
+.tags-container {
+  display: flex;
+  gap: 5px;
+  padding-top: 10px;
+}
+
+.projet-card-tag-logo {
+  width: 13%;
+  object-fit: cover;
+}
+
+.opacity {
+  transition: opacity 0.5s ease-in-out 0.5s;
+  opacity: 1;
+}

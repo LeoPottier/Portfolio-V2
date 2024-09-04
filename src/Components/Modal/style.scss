@@ -1,102 +1,102 @@
-@import '../../Utils/Variables.scss';
+@import "../../Utils/Variables.scss";
 
 .modal {
-    position: relative;
-    max-width: 80rem;
-    border-radius: 20px;
-    box-shadow: $shadow;
-    padding: 2rem;
-    margin: auto;
-    margin-top: 8rem;
-    background-color: $primary-color;
+  position: relative;
+  max-width: 80rem;
+  border-radius: 20px;
+  box-shadow: $shadow;
+  padding: 2rem;
+  margin: auto;
+  margin-top: 8rem;
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  animation: blowUpModal 1s ease;
+  @media screen and (max-width: $breakpoint-mobile) {
+    max-height: 97vh;
+    overflow-y: auto;
+    margin: 15px;
+  }
+  &-project {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    @media screen and (max-width: $breakpoint-mobile) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: $font-color;
+  }
+  &-cover {
+    object-fit: cover;
+    height: 100%;
+  }
+  &-container-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-    animation: blowUpModal 1s ease;
+    gap: 2rem;
+    width: 50%;
     @media screen and (max-width: $breakpoint-mobile) {
-        max-height: 97vh;
-        overflow-y: auto;
-        margin: 15px;
+      width: 100%;
     }
-    &-project {
-        display: flex;
-        flex-direction: row;
-        gap: 4rem;
-        @media screen and (max-width: $breakpoint-mobile) {
-            display: flex;
-            flex-direction: column;
-        }
+  }
+  &-description {
+    color: white;
+    font-size: 1.1rem;
+  }
+  &-github {
+    color: white;
+    border: solid 1px;
+    border-radius: 20px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 15rem;
+    &:hover {
+      background-color: rgba(17, 34, 64, 0.5);
+      cursor: pointer;
     }
-    &-title {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        color: $font-color;
+    @media screen and (max-width: $breakpoint-mobile) {
+      width: 100%;
     }
-    &-cover {
-        object-fit: cover;
-        height: 100%;
+  }
+  &-close {
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 94%;
+    @media screen and (max-width: $breakpoint-mobile) {
+      left: 90%;
     }
-    &-container-info {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        width: 50%;
-        @media screen and (max-width: $breakpoint-mobile) {
-            width: 100%;
-        }
-    }
-    &-description {
-        color: white;
-        font-size: 1.1rem;
-    }
-    &-github {
-        color: white;
-        border: solid 1px;
-        border-radius: 20px;
-        padding: 1rem;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        max-width: 15rem;
-        &:hover {
-            background-color: rgba(17, 34, 64, 0.5);
-            cursor: pointer;
-        }
-        @media screen and (max-width: $breakpoint-mobile) {
-            width: 100%;
-        }
-    } 
-    &-close {
-        color: white;
-        cursor: pointer;
-        position: absolute;
-        left: 94%;
-        @media screen and (max-width: $breakpoint-mobile) {
-            left: 90%;;
-        }
-    }
+  }
 }
 
 .modal.closing {
-    animation: blowDownModal 0.5s ease-in-out;
+  animation: blowDownModal 0.5s ease-in-out;
 }
 
 @keyframes blowUpModal {
-    0% {
-      transform:scale(0);
-    }
-    100% {
-      transform:scale(1);
-    }
+  0% {
+    transform: scale(0);
   }
+  100% {
+    transform: scale(1);
+  }
+}
 
 @keyframes blowDownModal {
-    0% {
-      transform:scale(1);
-    }
-    100% {
-      transform:scale(0);
-    }
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
 }

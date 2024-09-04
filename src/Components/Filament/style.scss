@@ -1,0 +1,96 @@
+@import "../../Utils/Variables.scss";
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.filamentY {
+  position: absolute;
+  width: 2px; /* Épaisseur du filament */
+  height: 100%;
+  background: linear-gradient(transparent, #64ffda, transparent);
+  opacity: 0.4;
+  animation: moveFilamentY 10s linear infinite;
+}
+
+.filament1 {
+  left: 10%;
+  animation-duration: 8s;
+}
+
+.filament2 {
+  left: 30%;
+  animation-duration: 10s;
+}
+
+.filament3 {
+  left: 50%;
+  animation-duration: 12s;
+}
+
+.filament4 {
+  left: 70%;
+  animation-duration: 14s;
+}
+
+.filament5 {
+  left: 90%;
+  animation-duration: 16s;
+}
+
+.filamentX {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, $primary-color, transparent);
+  opacity: 0.7;
+  animation: moveFilamentX 2s linear infinite;
+}
+
+.filament6 {
+  top: 10%;
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+.filament7 {
+  top: 30%;
+  animation-duration: 2s;
+  animation-delay: 4s;
+}
+.filament8 {
+  top: 50%;
+  animation-duration: 2s;
+  animation-delay: 6s;
+}
+.filament9 {
+  top: 70%;
+  animation-duration: 2s;
+  animation-delay: 8s;
+}
+
+.filament10 {
+  top: 90%;
+  animation-duration: 2s;
+  animation-delay: 10s;
+}
+
+@keyframes moveFilamentY {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes moveFilamentX {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

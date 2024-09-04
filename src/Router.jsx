@@ -1,22 +1,17 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, } from "react-router-dom";
-import Header from './Components/Header/Header'
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
-import Footer from "./Components/Footer/Footer";
 
 function Router() {
   return (
-      <React.StrictMode>
-          <BrowserRouter basename="/Portfolio">
-              <Header />
-              <Routes>
-                  <Route exact path="/" element={<Home />} />   
-              </Routes>
-              <Footer />
-          </BrowserRouter>
-      </React.StrictMode>
-  )   
+    <React.StrictMode>
+      <BrowserRouter basename="/Portfolio">
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </React.StrictMode>
+  );
 }
 
-export default Router
+export default Router;

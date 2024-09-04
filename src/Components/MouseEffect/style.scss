@@ -1,10 +1,16 @@
 .effects {
-    position: absolute;
-    background: radial-gradient(circle closest-side, rgba(3, 118, 126, 0.15), transparent 90%);
-    width: 60vw; /* Taille du cercle */
-    height: 60vw; /* Taille du cercle */
-    border-radius: 50%;
-    transition: width 0.2s ease, height 0.2s ease;
-    z-index: -1;
-    overflow: hidden;
+  position: absolute;
+  background: radial-gradient(
+    circle closest-side,
+    rgba(3, 118, 126, 0.15),
+    transparent 90%
+  );
+  width: 60vw; /* Taille du cercle */
+  height: 60vw; /* Taille du cercle */
+  border-radius: 50%;
+  transition:
+    width 0.2s ease,
+    height 0.2s ease;
+  z-index: -1;
+  overflow: hidden;
 }

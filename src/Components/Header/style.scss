@@ -1,80 +1,74 @@
-@import '../../Utils/Variables.scss';
+@import "../../Utils/Variables.scss";
 
 .header {
-    padding: 10px;
-    height: 75px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    box-shadow: $shadow;
-    position: fixed;
-    z-index: 1;
-    backdrop-filter: blur(5px);
-    transition: transform 0.2s ease;
-    opacity: 1;
+  padding: 10px;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-shadow: $shadow;
+  position: fixed;
+  top: 0%;
+  z-index: 1;
+  backdrop-filter: blur(5px);
+  transition: transform 0.2s ease;
+  opacity: 1;
 }
 
-.visible {
-    transform: translateY(0); 
-  }
-  
-  .hidden {
-    transform: translateY(-100%); 
-    }
-
 .nav-items {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding-right: 45px;
-    @media screen and (max-width: $breakpoint-mobile) {
-        display: none;
-    }
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-right: 45px;
+  cursor: pointer;
+  @media screen and (max-width: $breakpoint-mobile) {
+    display: none;
+  }
 }
 
 nav a {
-    color: white;
+  color: white;
 }
 
 nav a:hover {
-    color: #64FFDA;
+  color: #64ffda;
 }
 
 .container {
-    width: max-content;
-    max-width: 100px;
+  width: max-content;
+  max-width: 100px;
 }
 
 svg {
-    width: 45%;
-    height: 100%;
-    display: block;
-    margin: 0 auto;
-    fill: none;
-  }
-  
+  width: 45%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  fill: none;
+}
+
 .cv-nav {
-    border: solid 1px ;
-    padding: 1rem;
-    color: $font-color;
-    border-radius: 10px;
-    &:hover {
-        background-color: $secondary-color;
-    }
+  border: solid 1px;
+  padding: 1rem;
+  color: $font-color;
+  border-radius: 10px;
+  &:hover {
+    background-color: $secondary-color;
+  }
 }
 
 .bm-burger-button {
-    color: #64FFDA;
-    width: 6vw;
-    height: 6vw;
+  color: #64ffda;
+  width: 6vw;
+  height: 6vw;
 }
 
 .bm-menu-wrap {
-    background-color: white;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    height: 100%;
-    width: 100%;
-  }
+  background-color: white;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  height: 100%;
+  width: 100%;
+}

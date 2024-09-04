@@ -1,167 +1,168 @@
-@import '../../../Utils/Variables.scss';
+@import "../../../Utils/Variables.scss";
 
 .content-animation {
-    background-color: black;
-    width: 31rem;
-    height: 31rem;
-    border-radius: 50%;
-    box-shadow: 0 0 .5em .2em #000 inset, 0 0 .15em 0 #fff;
-    overflow: hidden;
-    position: relative;
-    @media screen and (max-width: $breakpoint-tablet) {
-        display: none;
-    }
+  background-color: black;
+  width: 31rem;
+  height: 31rem;
+  border-radius: 50%;
+  box-shadow:
+    0 0 0.5em 0.2em #000 inset,
+    0 0 0.15em 0 #fff;
+  overflow: hidden;
+  position: relative;
+  @media screen and (max-width: $breakpoint-tablet) {
+    display: none;
+  }
 }
 
 .mail-icon {
-    position: absolute;
-    color: white;
-    box-shadow: $shadow;
+  position: absolute;
+  color: white;
+  box-shadow: $shadow;
 }
 
 .star1 {
-    position: absolute;
-    top: 45%;
-    left: 49%;
-    color: white;
-    border-radius: 50%;
-    box-shadow: 0px 0px 11px white;
-    animation: changeColorConst 1s infinite alternate;
+  position: absolute;
+  top: 45%;
+  left: 49%;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 11px white;
+  animation: changeColorConst 1s infinite alternate;
 }
 
 .star2 {
-    position: absolute;
-    top: 26%;
-    left: 73%;
-    color: white;
-    border-radius: 50%;
-    box-shadow: 0px 0px 11px white;
-    animation: changeColorConst 1s infinite alternate;
+  position: absolute;
+  top: 26%;
+  left: 73%;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 11px white;
+  animation: changeColorConst 1s infinite alternate;
 }
 
 .star3 {
-    position: absolute;
-    top: 45%;
-    left: 16%;
-    color: white;
-    border-radius: 50%;
-    box-shadow: 0px 0px 11px white;
-    animation: changeColorConst 1s infinite alternate;
+  position: absolute;
+  top: 45%;
+  left: 16%;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 11px white;
+  animation: changeColorConst 1s infinite alternate;
 }
 
 .star4 {
-    position: absolute;
-    top: 58%;
-    left: 63%;
-    color: white;
-    border-radius: 50%;
-    box-shadow: 0px 0px 11px white;
-    animation: changeColorConst 1s infinite alternate;
+  position: absolute;
+  top: 58%;
+  left: 63%;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 11px white;
+  animation: changeColorConst 1s infinite alternate;
 }
 
 .star5 {
-    position: absolute; 
-    top: 45%;
-    left: 32%;
-    color: white;
-    border-radius: 50%;
-    box-shadow: 0px 0px 11px white;
-    animation: changeColorConst 1s infinite alternate;
+  position: absolute;
+  top: 45%;
+  left: 32%;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 11px white;
+  animation: changeColorConst 1s infinite alternate;
 }
 
 .star6 {
-    position: absolute; 
-    top: 45%;
-    left: 84%;
-    color: white;
-    border-radius: 50%;
-    box-shadow: 0px 0px 11px white;
-    animation: changeColorConst 1s infinite alternate;
+  position: absolute;
+  top: 45%;
+  left: 84%;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 11px white;
+  animation: changeColorConst 1s infinite alternate;
 }
 
 .star11 {
-    position: absolute; 
-    top: 58%;
-    left: 3%;
-    color: white;
-    border-radius: 50%;
-    box-shadow: 0px 0px 11px white;
-    animation: changeColorConst 1s infinite alternate;
+  position: absolute;
+  top: 58%;
+  left: 3%;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 11px white;
+  animation: changeColorConst 1s infinite alternate;
 }
 
 .star7 {
-    position: absolute; 
-    top: 22%;
-    left: 28%;
-    color: white;
-    border-radius: 50%;
-    box-shadow: 0px 0px 11px white;
-    animation: changeColorStars 1s infinite alternate;
+  position: absolute;
+  top: 22%;
+  left: 28%;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 11px white;
+  animation: changeColorStars 1s infinite alternate;
 }
 
 .star8 {
-    position: absolute; 
-    top: 78%;
-    left: 35%;
-    color: white;
-    border-radius: 50%;
-    box-shadow: 0px 0px 11px white;
-    animation: changeColorStars 1s infinite alternate;
+  position: absolute;
+  top: 78%;
+  left: 35%;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 11px white;
+  animation: changeColorStars 1s infinite alternate;
 }
 
 .star9 {
-    position: absolute; 
-    top: 86%;
-    left: 73%;
-    color: white;
-    border-radius: 50%;
-    box-shadow: 0px 0px 11px white;
-    animation: changeColorStars 1s infinite alternate;
+  position: absolute;
+  top: 86%;
+  left: 73%;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 11px white;
+  animation: changeColorStars 1s infinite alternate;
 }
 
 .star10 {
-    position: absolute; 
-    top: 8%;
-    left: 57%;
-    color: white;
-    border-radius: 50%;
-    box-shadow: 0px 0px 11px white;
-    animation: changeColorStars 1s infinite alternate;
+  position: absolute;
+  top: 8%;
+  left: 57%;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 11px white;
+  animation: changeColorStars 1s infinite alternate;
 }
 
 .slide-from-left {
-    animation: slideFromLeft 1s ease forwards 0.3s;
-    opacity: 0;
-    transform: translateX(-100%);
-    }
-    @keyframes slideFromLeft {
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  animation: slideFromLeft 1s ease forwards 0.3s;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+@keyframes slideFromLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-
 @keyframes changeColorConst {
-    0% {
-      color: white;
-    }
-    50% {
-      color: yellow; 
-    }
-    100% {
-      color: white;
-    }
+  0% {
+    color: white;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: white;
+  }
 }
 
 @keyframes changeColorStars {
-    0% {
-      color: white;
-    }
-    50% {
-      color: grey; 
-    }
-    100% {
-      color: white;
-    }
+  0% {
+    color: white;
+  }
+  50% {
+    color: grey;
+  }
+  100% {
+    color: white;
+  }
 }

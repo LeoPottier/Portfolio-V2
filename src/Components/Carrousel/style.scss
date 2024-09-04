@@ -1,67 +1,64 @@
-@import '../../Utils/Variables.scss';
+@import "../../Utils/Variables.scss";
 
 .carrousel {
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: $breakpoint-mobile) {
+    width: 100%;
+  }
+  &-slider {
+    opacity: 0;
+    animation: slideOpacity 0.5s ease-in-out;
+  }
+  &-slider.active {
+    opacity: 1;
+    transform: translateX(0%);
+    height: 420px;
+    padding: 1rem;
+    border: solid 1px white;
+    border-radius: 20px;
+    background-color: rgba(17, 34, 64, 0.5);
+    box-shadow: $shadow;
     display: flex;
-    flex-direction: column;
-    @media screen and (max-width: $breakpoint-mobile) {
-        width: 100%;
-    }
-        &-slider{
-            opacity: 0;
-            animation: slideOpacity 0.5s ease-in-out;
-        }
-        &-slider.active{
-            opacity: 1;
-            transform: translateX(0%);
-            height: 420px;
-            padding: 1rem;
-            border: solid 1px white;
-            border-radius: 20px;
-            background-color: rgba(17, 34, 64, 0.5);
-            box-shadow: $shadow;
-            display: flex;
-            justify-content: center;
-        }
-        &-cover {
-            object-fit: contain;
-            border-radius: 25px;
-            width: 100%;
-            height: 100%;
-            max-width: 100%;
-        }
-        &-number {
-            color: $font-color;
-            position: absolute;
-            left: 47.5%;
-            bottom: -8.5%;
-    }    
+    justify-content: center;
+  }
+  &-cover {
+    object-fit: contain;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+  }
+  &-number {
+    color: $font-color;
+    position: absolute;
+    left: 47.5%;
+    bottom: -8.5%;
+  }
 }
 
 @keyframes slideOpacity {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .carroussel-arrow {
-    display: flex;
-    padding: 13px;
-    color: white;
-    width: 100%;
-    
+  display: flex;
+  padding: 13px;
+  color: white;
+  width: 100%;
 }
 
 .left-arrow:hover {
-    scale: 2;
-    cursor: pointer;
+  scale: 2;
+  cursor: pointer;
 }
 
-
 .right-arrow:hover {
-    scale: 2;
-    cursor: pointer;
+  scale: 2;
+  cursor: pointer;
 }

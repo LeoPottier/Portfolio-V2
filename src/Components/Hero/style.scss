@@ -1,91 +1,73 @@
-@import '../../Utils/Variables.scss';
+@import "../../Utils/Variables.scss";
 
 .hero {
-    width: 100%;
-    height: calc(var(--vh, 1vh)* 100);
-    position: relative;
-    &-content {
-        position: absolute;
-        left: 21%;
-        top: 35%;
-        color: white;
-        animation: nameAppears 3s ease ;
-    }
-    &-name {
-        font-size: 5rem;
-        @media screen and (max-width: $breakpoint-mobile) {
-            font-size: 11vw;
-        }
-    }
-    &-profession {
-        font-size: 2rem;
-        color: $font-color;
-        @media screen and (max-width: $breakpoint-mobile) {
-            font-size: 5vw;
-        }
-    }
-    &-guide {
-        width: 100%;
-        color: white;
-        position: absolute;
-        bottom: 6%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        font-size: 1.5rem;
-        cursor: pointer;
-        animation: float 2s ease-in-out infinite;
-        &-arrow {
-            color: $font-color;
-        }
-    }
-}
-
-
-.corners {
-    margin: 1rem;
-    max-width: 90rem;
+  width: 100%;
+  height: 97vh;
+  position: relative;
+  &-content {
     position: absolute;
-    top: 16%;
-    left: 0%;
-    animation: blowUpCorner 2s ease;
+    left: 21%;
+    top: 35%;
+    color: white;
+    animation: nameAppears 3s ease;
+  }
+  &-name {
+    font-size: 5rem;
     @media screen and (max-width: $breakpoint-mobile) {
-        top: 26%;
-        left: 0%;
+      font-size: 11vw;
     }
+  }
+  &-profession {
+    font-size: 2rem;
+    color: $font-color;
+    @media screen and (max-width: $breakpoint-mobile) {
+      font-size: 5vw;
+    }
+  }
+  &-guide {
+    width: 100%;
+    color: white;
+    position: absolute;
+    bottom: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    animation: float 2s ease-in-out infinite;
+  }
 }
 
 @keyframes blowUpCorner {
-    0% {
-      transform:scale(0);
-    }
-    100% {
-      transform:scale(1);
-    }
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-
 @keyframes nameAppears {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes float {
-    0% {
-      transform: translateY(-5px);
-    }
-    50% {
-      transform: translateY(5px);
-    }
-    100% {
-      transform: translateY(-5px);
-    }
+  0% {
+    transform: translateY(-5px);
   }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}

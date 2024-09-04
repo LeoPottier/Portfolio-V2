@@ -1,32 +1,30 @@
-@import './Variables.scss';
+@import "./Variables.scss";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #root {
-    overflow: hidden;
-    position: relative;
+  overflow: hidden;
+  position: relative;
 }
 
 body {
-    font-family: 'Anta', sans-serif;
-    background-color: $primary-color;
-    
+  font-family: "Anta", sans-serif;
+  background-color: $primary-color;
 }
 
 main {
-    max-width: 72rem;
-    width: 100%; /* Largeur réduite du corps */
-    margin: auto; 
+  width: 100%;
+  margin: auto;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 strong {
-    color: $font-color;
+  color: $font-color;
 }

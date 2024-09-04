@@ -1,24 +1,24 @@
 .tags-container {
-    display: flex;
-    gap: 5px;
-    padding-top: 10px;
+  display: flex;
+  gap: 5px;
+  padding-top: 10px;
 }
 
 .project-card-tags {
-    background-color: rgba(5, 174, 180, 0.2);
-    border-radius: 20px;
-    color: rgb(94 234 212);
-    line-height: 1.5rem;
-    padding: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    max-width: 9rem;
+  background-color: rgba(5, 174, 180, 0.2);
+  border-radius: 20px;
+  color: rgb(94 234 212);
+  line-height: 1.5rem;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  max-width: 9rem;
 }
 
 .projet-card-tag-logo {
-    height: 70%;
-    width: 14%;
-    object-fit: cover;
+  height: 70%;
+  width: 14%;
+  object-fit: cover;
 }

@@ -1,116 +1,128 @@
-@import '../../Utils/Variables.scss';
+@import "../../Utils/Variables.scss";
 
-.skill  {
+.skill {
+  width: 50%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  @media screen and (max-width: $breakpoint-mobile) {
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 50px;
+  }
+  &-block {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 100px;
+    justify-content: space-between;
+    @media screen and (max-width: $breakpoint-tablet) {
+      padding: 3rem;
+    }
     @media screen and (max-width: $breakpoint-mobile) {
-        padding-bottom: 50px;
+      padding: 3rem;
+      flex-direction: column;
+      align-items: center;
+      text-align: start;
+      gap: 2rem;
     }
-    &-block {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        @media screen and (max-width: $breakpoint-tablet) {
-           padding: 3rem;
-        }
-        @media screen and (max-width: $breakpoint-mobile) {
-            padding: 3rem;
-            flex-direction: column;
-            align-items: center;
-            text-align: start;
-            gap: 2rem;
-         }
+  }
+  &-container {
+    @media screen and (max-width: $breakpoint-mobile) {
+      display: flex;
+      flex-direction: column;
     }
-    &-container {
-        @media screen and (max-width: $breakpoint-mobile) {
-            display: flex;
-            flex-direction: column;
-        }
-
+  }
+  &-title {
+    opacity: 0;
+    color: white;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    margin-bottom: 5rem;
+    border-bottom: solid 1px;
+    @media screen and (max-width: $breakpoint-mobile) {
+      margin: auto;
     }
-    &-title {
-        opacity: 0;
-        color: white;
-        width: 70%;
-        display: flex;
-        justify-content: center;
-        padding-bottom: 40px;
-        margin-bottom: 5rem;
-        border-bottom: solid 1px;
-        @media screen and (max-width: $breakpoint-mobile) {
-            margin: auto;
-        }
-    }
-    &-list {
-        list-style: none;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        gap: 3px;
-        @media screen and (max-width: $breakpoint-mobile) {
-            flex-direction: row;
-            justify-content: center;
-        }
+  }
+  &-list {
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 3px;
+    @media screen and (max-width: $breakpoint-mobile) {
+      flex-direction: row;
+      justify-content: center;
     }
     li {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 5px;
-        padding: 5px;
+      flex: 1 1 calc(33.33% - 10px); /* Adjust the width to allow 3 items per row */
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      padding-right: 10px;
     }
-    li img {
-        width: 1.2rem;
-        object-fit: cover;
+  }
+  li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+  }
+  li img {
+    width: 1.2rem;
+    object-fit: cover;
+  }
+  &-icon-git {
+    color: white;
+    margin: 1px;
+  }
+  h3 {
+    color: rgb(94 234 212);
+    padding: 10px 30px;
+    @media screen and (max-width: $breakpoint-mobile) {
+      display: flex;
+      justify-content: center;
     }
-    &-icon-git {
-        color: white;
-        margin: 1px;
-    }
-    h3 {
-        color: rgb(94 234 212);
-        padding: 10px 30px;
-        @media screen and (max-width: $breakpoint-mobile) {
-            display: flex;
-            justify-content: center;
-        }
-    }
+  }
 }
 
 .slide-from-left {
-    animation: slideFromLeft 1s ease forwards 0.3s;
-    opacity: 0;
-    transform: translateX(-100%);
-    }
-    @keyframes slideFromLeft {
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  animation: slideFromLeft 1s ease forwards 0.3s;
+  opacity: 0;
+  transform: translateX(-100%);
 }
-
+@keyframes slideFromLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 .slide-from-right {
-    animation: slideFromRight 1s ease forwards 0.3s;
-    opacity: 0;
-    transform: translateX(100%);
+  animation: slideFromRight 1s ease forwards 0.3s;
+  opacity: 0;
+  transform: translateX(100%);
+}
+@keyframes slideFromRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
-  @keyframes slideFromRight {
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
 }
 .slide-from-bottom {
-    animation: slideFromBottom 1s ease forwards 0.3s;
-    opacity: 0;
-    transform: translateY(100%);
+  animation: slideFromBottom 1s ease forwards 0.3s;
+  opacity: 0;
+  transform: translateY(100%);
+}
+@keyframes slideFromBottom {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  @keyframes slideFromBottom {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
 }
