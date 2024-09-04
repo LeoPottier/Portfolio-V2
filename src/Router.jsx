@@ -5,7 +5,7 @@ import Home from "./Pages/Home/Home";
 function Router() {
   return (
     <React.StrictMode>
-      <BrowserRouter basename="/Portfolio">
+      <BrowserRouter basename="/Portfolio-V2/">
         <Routes>
           <Route exact path="/" element={<Home />} />
         </Routes>
